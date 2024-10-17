@@ -6,20 +6,12 @@
 // > controlla che sia nella lista di chi può accedere,
 // > stampa un messaggio appropriato sull'esito del controllo.
 
-// > Gioco dei dadi
-
-// Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
-// > Stabilire il vincitore, in base a chi fa il punteggio più alto.
-
 // ! RACCOLTA DATI //
 
 // > controlla che sia nella lista di chi può accedere,
 // > stampa un messaggio appropriato sull'esito del controllo.
 
-// Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
-// > Stabilire il vincitore, in base a chi fa il punteggio più alto.
-
-// ! ELABORAZIONE //
+// ! ELABORAZIONE MAIL //
 
 // Lista di email autorizzate
 const emailAutorizzate = [
@@ -32,8 +24,12 @@ const emailAutorizzate = [
 const emailUtente = prompt("Inserisci la tua email:");
 
 // Controlla se l'email è nella lista di autorizzati
+
+// ! SE l'email autorizzata è inclusa nella const
 if (emailAutorizzate.includes(emailUtente)) {
+  // -stampa il messaggio
   console.log("Accesso consentito.");
+  // ! ALTRIMENTI stampa l'accesso negato
 } else {
   console.log("Accesso negato.");
 }
